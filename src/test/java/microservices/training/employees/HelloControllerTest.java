@@ -25,5 +25,6 @@ class HelloControllerTest {
         String message = helloService.sayHello();
 
         assertThat(message).startsWith("mock");
+
     }
 }
