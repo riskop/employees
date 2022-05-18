@@ -1,5 +1,6 @@
 package microservices.training.employees;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
