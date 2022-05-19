@@ -8,6 +8,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
 
+import static org.hamcrest.Matchers.equalTo;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;
@@ -41,7 +42,7 @@ public class EmployeesControllerWebMvcIT {
                 //.andDo(print())
                 .andExpect(status().isOk())
         // az alabbi nem megy
-                //.andExpect(jsonPath("$[0].name", equalTo("John Doe")))
+                .andExpect(jsonPath("$[0].name", equalTo("John Doe")))
         ;
     }
 }
